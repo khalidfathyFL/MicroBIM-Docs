@@ -12,9 +12,10 @@ timezone: UTC
 # URL
 baseurl: ""
 url: "https://tranquil-lebkuchen-cc3871.netlify.app" # Your GitHub Pages URL
-root: /
+
 
 permalink: :year/:month/:day/:title/
+relative_link: true
 permalink_defaults:
 pretty_urls:
   trailing_index: true
