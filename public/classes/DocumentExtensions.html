@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#f5f5f5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"khalidfathyfl.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Summary: Provides extension methods for the Autodesk Revit API. MethodsGetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)Summary: Retrieves all family">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DocumentExtensions">
+<meta property="og:url" content="https://khalidfathyfl.github.io/classes/DocumentExtensions.html">
+<meta property="og:site_name" content="MicroBIM-Fire">
+<meta property="og:description" content="Summary: Provides extension methods for the Autodesk Revit API. MethodsGetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)Summary: Retrieves all family">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-12-09T18:48:10.527Z">
+<meta property="article:modified_time" content="2024-12-09T18:48:10.527Z">
+<meta property="article:author" content="Khalid Fathy">
+<meta property="article:tag" content="MicroBIM, Fire Libraries, Revit Extensions, WPF UI, Revit Geometry, Revit Data, AEC Industry, Developer Tools, Revit API, WPF Development">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://khalidfathyfl.github.io/classes/DocumentExtensions">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://khalidfathyfl.github.io/classes/DocumentExtensions.html","path":"classes/DocumentExtensions.html","title":"DocumentExtensions"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>DocumentExtensions | MicroBIM-Fire
+</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MicroBIM-Fire</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Libraries Documentation</p>
+      <img class="custom-logo-image" src="/images/MicroBim-Logo.png" alt="MicroBIM-Fire">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>Home</a></li><li class="menu-item menu-item-docs"><a href="/classes/" rel="section"><i class="list fa-fw"></i>docs</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="user fa-fw"></i>About</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Methods"><span class="nav-number">1.</span> <span class="nav-text">Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GetFamilyTypesByCategoryOrderedByName-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-BuiltInCategory"><span class="nav-number">1.1.</span> <span class="nav-text">GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Parameters"><span class="nav-number">1.1.1.</span> <span class="nav-text">Parameters:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Returns"><span class="nav-number">1.1.2.</span> <span class="nav-text">Returns:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GetLevelsOrderedByProperty1-Autodesk-Revit-DB-Document-System-Func-Autodesk-Revit-DB-Level-0-System-Boolean"><span class="nav-number">1.2.</span> <span class="nav-text">GetLevelsOrderedByProperty1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,0},System.Boolean)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Parameters-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">Parameters:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Returns-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">Returns:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Exceptions"><span class="nav-number">1.2.3.</span> <span class="nav-text">Exceptions:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GetRebarShapes-Autodesk-Revit-DB-Document"><span class="nav-number">1.3.</span> <span class="nav-text">GetRebarShapes(Autodesk.Revit.DB.Document)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Parameters-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">Parameters:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Returns-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">Returns:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Exceptions-1"><span class="nav-number">1.3.3.</span> <span class="nav-text">Exceptions:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GetRebarBarTypes-Autodesk-Revit-DB-Document"><span class="nav-number">1.4.</span> <span class="nav-text">GetRebarBarTypes(Autodesk.Revit.DB.Document)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Parameters-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">Parameters:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Returns-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">Returns:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Exceptions-2"><span class="nav-number">1.4.3.</span> <span class="nav-text">Exceptions:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CreateAndPlaceColumnAtPoint-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-XYZ-Autodesk-Revit-DB-FamilySymbol-Autodesk-Revit-DB-Level-Autodesk-Revit-DB-Level"><span class="nav-number">1.5.</span> <span class="nav-text">CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Parameters-4"><span class="nav-number">1.5.1.</span> <span class="nav-text">Parameters:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Returns-4"><span class="nav-number">1.5.2.</span> <span class="nav-text">Returns:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Exceptions-3"><span class="nav-number">1.5.3.</span> <span class="nav-text">Exceptions:</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Khalid Fathy</p>
+  <div class="site-description" itemprop="description">Comprehensive documentation for Revit Extensions, WPF UI Library, Revit Geometry Manipulation, and Revit Data Handling. Designed to empower developers with tools and guidance for seamless integration and enhanced workflows in the AEC industry.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://www.microbim.net/Authorized/microbim.html" title="Website → https:&#x2F;&#x2F;www.microbim.net&#x2F;Authorized&#x2F;microbim.html" rel="noopener me" target="_blank"><i class="fa fa-globe fa-fw"></i>Website</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/MicroBim_Fire/" title="Facebook → https:&#x2F;&#x2F;www.facebook.com&#x2F;MicroBim_Fire&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>Facebook</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/company/microbimfire/posts/?feedView=all" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;microbimfire&#x2F;posts&#x2F;?feedView&#x3D;all" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UCgGCn-xxaQlFwA4JlBHB_NA" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCgGCn-xxaQlFwA4JlBHB_NA" rel="noopener me" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">DocumentExtensions
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p><strong>Summary:</strong> Provides extension methods for the Autodesk Revit API.</p>
+<h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h2><h3 id="GetFamilyTypesByCategoryOrderedByName-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-BuiltInCategory"><a href="#GetFamilyTypesByCategoryOrderedByName-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-BuiltInCategory" class="headerlink" title="GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)"></a>GetFamilyTypesByCategoryOrderedByName(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)</h3><p><strong>Summary:</strong> Retrieves all family types of the specified category from the given Revit document as an ObservableCollection.</p>
+<h4 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters:"></a>Parameters:</h4><ul>
+<li><code>doc</code>: The Revit document to search for family types.</li>
+<li><code>category</code>: The BuiltInCategory to filter family types.</li>
+</ul>
+<h4 id="Returns"><a href="#Returns" class="headerlink" title="Returns:"></a>Returns:</h4><p>An ObservableCollection containing all FamilySymbol objects representing the specified category.</p>
+<hr>
+<h3 id="GetLevelsOrderedByProperty1-Autodesk-Revit-DB-Document-System-Func-Autodesk-Revit-DB-Level-0-System-Boolean"><a href="#GetLevelsOrderedByProperty1-Autodesk-Revit-DB-Document-System-Func-Autodesk-Revit-DB-Level-0-System-Boolean" class="headerlink" title="GetLevelsOrderedByProperty1(Autodesk.Revit.DB.Document,System.Func{Autodesk.Revit.DB.Level,0},System.Boolean)"></a>GetLevelsOrderedByProperty<code>1(Autodesk.Revit.DB.Document,System.Func&#123;Autodesk.Revit.DB.Level,</code>0},System.Boolean)</h3><p><strong>Summary:</strong> Retrieves all levels from the specified Revit document as an ObservableCollection,<br>            with dynamic ordering based on a specified property.</p>
+<h4 id="Parameters-1"><a href="#Parameters-1" class="headerlink" title="Parameters:"></a>Parameters:</h4><ul>
+<li><code>doc</code>: The Revit document to search for levels.</li>
+<li><code>keySelector</code>: A function to extract a key from a Level for ordering.</li>
+<li><code>ascending</code>: If true, orders levels in ascending order; otherwise, descending.</li>
+</ul>
+<h4 id="Returns-1"><a href="#Returns-1" class="headerlink" title="Returns:"></a>Returns:</h4><p>An ObservableCollection containing Level objects, ordered dynamically by the specified property.</p>
+<h4 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions:"></a>Exceptions:</h4><ul>
+<li><code>T:ArgumentNullException</code>: Thrown if the document or keySelector is null.</li>
+</ul>
+<hr>
+<h3 id="GetRebarShapes-Autodesk-Revit-DB-Document"><a href="#GetRebarShapes-Autodesk-Revit-DB-Document" class="headerlink" title="GetRebarShapes(Autodesk.Revit.DB.Document)"></a>GetRebarShapes(Autodesk.Revit.DB.Document)</h3><p><strong>Summary:</strong> Retrieves all rebar shapes from the specified Revit document.</p>
+<h4 id="Parameters-2"><a href="#Parameters-2" class="headerlink" title="Parameters:"></a>Parameters:</h4><ul>
+<li><code>doc</code>: The Revit document to retrieve rebar shapes from.</li>
+</ul>
+<h4 id="Returns-2"><a href="#Returns-2" class="headerlink" title="Returns:"></a>Returns:</h4><p>A list of RebarShape objects available in the document.</p>
+<h4 id="Exceptions-1"><a href="#Exceptions-1" class="headerlink" title="Exceptions:"></a>Exceptions:</h4><ul>
+<li><code>T:ArgumentNullException</code>: Thrown if the provided document is null.</li>
+</ul>
+<hr>
+<h3 id="GetRebarBarTypes-Autodesk-Revit-DB-Document"><a href="#GetRebarBarTypes-Autodesk-Revit-DB-Document" class="headerlink" title="GetRebarBarTypes(Autodesk.Revit.DB.Document)"></a>GetRebarBarTypes(Autodesk.Revit.DB.Document)</h3><p><strong>Summary:</strong> Retrieves all rebar bar types from the specified Revit document as an ObservableCollection.</p>
+<h4 id="Parameters-3"><a href="#Parameters-3" class="headerlink" title="Parameters:"></a>Parameters:</h4><ul>
+<li><code>doc</code>: The Revit document to retrieve rebar bar types from.</li>
+</ul>
+<h4 id="Returns-3"><a href="#Returns-3" class="headerlink" title="Returns:"></a>Returns:</h4><p>An ObservableCollection containing all RebarBarType objects in the document.</p>
+<h4 id="Exceptions-2"><a href="#Exceptions-2" class="headerlink" title="Exceptions:"></a>Exceptions:</h4><ul>
+<li><code>T:ArgumentNullException</code>: Thrown if the provided document is null.</li>
+</ul>
+<hr>
+<h3 id="CreateAndPlaceColumnAtPoint-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-XYZ-Autodesk-Revit-DB-FamilySymbol-Autodesk-Revit-DB-Level-Autodesk-Revit-DB-Level"><a href="#CreateAndPlaceColumnAtPoint-Autodesk-Revit-DB-Document-Autodesk-Revit-DB-XYZ-Autodesk-Revit-DB-FamilySymbol-Autodesk-Revit-DB-Level-Autodesk-Revit-DB-Level" class="headerlink" title="CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)"></a>CreateAndPlaceColumnAtPoint(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.Level)</h3><p><strong>Summary:</strong> Prompts the user to select a point and places a column at that point.</p>
+<h4 id="Parameters-4"><a href="#Parameters-4" class="headerlink" title="Parameters:"></a>Parameters:</h4><ul>
+<li><code>doc</code>: The Revit document where the column will be placed.</li>
+<li><code>uiDoc</code>: The Revit UI document for user interaction.</li>
+<li><code>columnType</code>: </li>
+<li><code>baseLevel</code>: </li>
+<li><code>topLevel</code>:</li>
+</ul>
+<h4 id="Returns-4"><a href="#Returns-4" class="headerlink" title="Returns:"></a>Returns:</h4><p>The created column Element, or null if no column was created.</p>
+<h4 id="Exceptions-3"><a href="#Exceptions-3" class="headerlink" title="Exceptions:"></a>Exceptions:</h4><ul>
+<li><code>T:ArgumentNullException</code>: Thrown if the provided document or UI document is null.</li>
+</ul>
+<hr>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">MicroBIM-Fire Dev Team</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
