@@ -11,7 +11,7 @@ timezone: UTC
 
 # URL
 baseurl: ""
-url: "https://KhalidfathyFL.github.io" # Your GitHub Pages URL
+url: "https://tranquil-lebkuchen-cc3871.netlify.app" # Your GitHub Pages URL
 
 permalink: :year/:month/:day/:title/
 permalink_defaults:
